@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Liste des clubs</title>
+    </head>
+    <body>	
+		<h1>Liste des clubs</h1>
+		<ul>
+			{% for club in clubs %}
+				<li><a href="club1.html">{{club.nom}}</a> {{club.description}}</li>
+			{% endfor %}
+		</ul>
+    </body>
+</html>
